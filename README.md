@@ -1,3 +1,7 @@
+![npm](https://img.shields.io/npm/v/mongo-easy-setup)
+![downloads](https://img.shields.io/npm/dw/mongo-easy-setup)
+![license](https://img.shields.io/npm/l/mongo-easy-setup)
+
 # mongo-easy-setup 🚀
 
 Zero-config MongoDB setup for Node.js & MERN applications.
