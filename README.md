@@ -1,6 +1,22 @@
-# mongo-easy-setup
+# mongo-easy-setup 🚀
 
-Zero-config MongoDB setup for Node.js applications.
+Zero-config MongoDB setup for Node.js & MERN applications.
+
+> Stop writing MongoDB boilerplate. Connect with one line.
+
+⭐ If this project helps you, please star the repo!
+
+## Why mongo-easy-setup?
+
+### ❌ Without this library
+- Manual MongoClient setup
+- Repeated env validation
+- Boilerplate in every project
+
+### ✅ With mongo-easy-setup
+```js
+await connectMongo();
+
 
 ## Installation
 npm install mongo-easy-setup
