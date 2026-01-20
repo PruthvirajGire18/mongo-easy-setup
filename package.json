@@ -1,0 +1,21 @@
+{
+  "name": "mongo-easy-setup",
+  "version": "1.0.0",
+  "description": "Zero-config MongoDB setup for Node.js applications",
+  "type": "module",
+  "main": "src/index.js",
+  "keywords": [
+    "mongodb",
+    "mongo",
+    "nodejs",
+    "database",
+    "setup",
+    "mern"
+  ],
+  "author": "Pruthviraj Gire",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "mongodb": "^7.0.0"
+  }
+}
