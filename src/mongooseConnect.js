@@ -15,16 +15,11 @@ export async function connectMongoose(uri) {
     return mongoose;
   }
 
-  try {
-    console.log("🔄 Connecting to MongoDB (Mongoose)...");
-    await mongoose.connect(mongoUri);
-    console.log("✅ MongoDB connected via Mongoose");
-    return mongoose;
-  } catch (err) {
-    console.error("❌ Mongoose connection failed");
-    throw err;
-  }
+  console.log("🔄 Connecting to MongoDB (Mongoose)...");
+  await mongoose.connect(mongoUri);
+  console.log("✅ MongoDB connected via Mongoose");
+
+  return mongoose;
 }
 
-// 🔥 IMPORTANT: export SAME mongoose instance
 export { mongoose };

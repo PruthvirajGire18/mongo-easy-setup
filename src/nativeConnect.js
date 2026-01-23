@@ -17,20 +17,15 @@ export async function connectNative(uri) {
     return client;
   }
 
-  try {
-    console.log("🔄 Connecting to MongoDB (Native Driver)...");
-    client = new MongoClient(mongoUri);
-    await client.connect();
-    console.log("✅ MongoDB connected via Native Driver");
+  console.log("🔄 Connecting to MongoDB (Native Driver)...");
+  client = new MongoClient(mongoUri);
+  await client.connect();
+  console.log("✅ MongoDB connected via Native Driver");
 
-    process.on("SIGINT", closeNative);
-    process.on("SIGTERM", closeNative);
+  process.on("SIGINT", closeNative);
+  process.on("SIGTERM", closeNative);
 
-    return client;
-  } catch (err) {
-    console.error("❌ Native MongoDB connection failed");
-    throw err;
-  }
+  return client;
 }
 
 export async function closeNative() {
